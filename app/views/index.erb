@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fwitter</title>
+  </head>
+  <body>
+ 
+      <h1>Welcome to Fwitter!</h1>
+      <p>The greatest place where you and your friends could keep in touch.</p>
+      <p>Follow me on instagram @stingy__</p>
+      
+      <ul>
+          <% @tweets.each do |tweet| %>
+              <li>
+                <%= tweet.username %> says: 
+                <%= tweet.status %> 
+              </li>
+          <% end %>
+      </ul>
+ 
+  </body>
+</html>
